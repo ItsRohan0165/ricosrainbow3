@@ -46,4 +46,5 @@ bot.on("message", (message) => {
         if (message.content === "!!start") {stop.splice(stop.indexOf(message.guild.id),1); return message.channel.send("The Rainbow Has Started :)");}
     }
 })
-bot.login(process.env.token);
+
+bot.login(process.env.token)
