@@ -31,10 +31,10 @@ bot.on("ready", () => {
     console.log("----------------------------")
 	
 	    function changing_status() {
-        let status = [`Servers: ${bot.guilds.size} | Users: ${bot.users.size}`,`bot by RicoBD#1874`]
+        let status = [`Servers: ${bot.guilds.size}]
         let randomStatus = status[Math.floor(Math.random() * status.length)]
         bot.user.setActivity(randomStatus, {type: "PLAYING"});
-        bot.user.setStatus("idle")
+        bot.user.setStatus("online")
     }
     setInterval(changing_status, 12000)
 })
